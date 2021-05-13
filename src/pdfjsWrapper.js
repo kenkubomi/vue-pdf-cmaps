@@ -26,6 +26,9 @@ export default function(PDFJS) {
 		// source.pdfBug = true;
 		// source.stopAtErrors = true;
 
+		source.cMapUrl = '/cmaps/';
+		source.cMapPacked = true;
+
 		if ( options && options.withCredentials )
 			source.withCredentials = options.withCredentials;
 
